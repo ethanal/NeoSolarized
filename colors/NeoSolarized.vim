@@ -165,15 +165,10 @@ let colors_name = "NeoSolarized"
     let s:ob              = ""
 "}}}
 
-" Background value based on termtrans setting "{{{
+" Background value "{{{
 " ---------------------------------------------------------------------
-if (has("gui_running") || g:neosolarized_termtrans == 0)
-    let s:gui_back        = s:gui_base03
-    let s:term_back        = s:term_base03
-else
-    let s:gui_back        = "NONE"
-    let s:term_back        = "NONE"
-endif
+let s:gui_back        = "NONE"
+let s:term_back        = "NONE"
 "}}}
 
 " Alternate light scheme "{{{
